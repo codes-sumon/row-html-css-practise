@@ -70,7 +70,7 @@ table{
 }
 
 table, tr, th, td{
-    border: #222 2px solid;
+    border: #222 1px solid;
     margin: 0px;
     padding: 5px 10px;
     text-align: center;
@@ -140,4 +140,44 @@ th, td{
 .Calendar table tr td:nth-child(6):hover{
     background-color: red;
     color: black;
+}
+.contac-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contac-form table tr td label{
+    text-align: right !important;
+}
+.reg-tbl tr td{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+input[type="text"], input[type="email"], input[type="tel"], 
+input[type="password"], input[type="url"],input[type="date"], textarea, select {
+    background: #f1ecec none repeat scroll 0 0;
+    border: 0;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 5px;
+    outline: none;
+    min-width: 235px;
+}
+input[type="radio"]{
+    background: #f1ecec none repeat scroll 0 0;
+}
+.from-address td input[type="text"]{
+    width: 600px;
+}
+.from-check td input[type="submit"], .contact-form button[type="submit"] {
+    background: #52b0fb none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 8px 45px;
+    margin: 5px;
 }
