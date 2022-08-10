@@ -36,11 +36,16 @@ body {
     margin: 0px;
     padding: 0px;
 }
-a:hover { 
+a, a:hover { 
     text-decoration: none;
 }
 .mainmenu{
     background-color: #222;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 99;
+    opacity: .9;
 }
 .mainmenu ul {
     list-style: outside none none;
@@ -64,36 +69,6 @@ a:hover {
     color: #dca521;
 }
 
-table{
-    border: #222 2px solid;
-    align-items: center;
-}
-
-table, tr, th, td{
-    border: #222 1px solid;
-    margin: 0px;
-    padding: 5px 10px;
-    text-align: center;
-}
-th, td{
-    min-width: 115px;
-}
-.tbl-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.tbl-content table{
-    width: 90%;
-}
-
-.tbl-content table tr td:hover{
-    background-color: #565656;
-    color: #fff;
-    box-shadow: 10px 10px 10px  rgb(199, 183, 183);
-    transition: 0.4s;
-}
-
 .Calendar{
     display: flex;
     flex-direction: column;
@@ -101,7 +76,7 @@ th, td{
     margin-top: 25px;
 }
 
-.Calendar table tr td:hover{
+.Calendar tr td:hover{
     background-color: #565656;
     color: #fff;
     box-shadow: 10px 10px 10px  rgb(199, 183, 183);
@@ -180,4 +155,109 @@ input[type="radio"]{
     color: #fff;
     padding: 8px 45px;
     margin: 5px;
+}
+
+
+
+.section-padding {
+    padding: 80px 0;
+}
+.white-box {
+    box-shadow: 0 0 10px #f5f5f5;
+    padding: 30px;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="url"], textarea {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: medium none;
+    padding: 15px;
+}
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    width: 95%;
+}
+input[type="submit"] {
+    margin: 0;
+    width: auto;
+}
+.contact-form textarea {
+    height: 143px;
+    resize: none;
+}
+.contact-form input[type="submit"], .contact-form button[type="submit"] {
+    background: #52b0fb none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 15px 30px;
+}
+.colored-box {
+    background: #52b0fb none repeat scroll 0 0;
+    color: #fff;
+    min-height: 655px;
+    padding: 30px;
+}
+.colored-box a {
+    color: #fff;
+}
+.contact-info {
+    margin-bottom: 30px;
+    padding-left: 45px;
+    position: relative;
+}
+.contact-info i.fa {
+    font-size: 20px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+}
+.colored-box h4, .white-box h4 {
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.social-icons a {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    box-shadow: 0 0 3px #999;
+    color: #333;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+}
+.social-icons a:hover {
+    box-shadow: 0 0 0;
+    color: #52b0fb;
+}
+
+.c-tbl tr th {
+    text-align: center;
+    margin: 8px 36px 5px 0px;
+    padding: 10px;
+}
+
+.c-tbl tr td {
+    text-align: center;
+    padding: 10px;
+    font-size:25px ;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:80px ;
+}
+.btn button a{
+    color: #fff;
+    display: block;
+}
+.btn button a:hover{
+    color: rgb(141, 114, 114);
+    transition: 0.3s;
+}
+table.c-tbl {
+    margin-top: 20px;
 }

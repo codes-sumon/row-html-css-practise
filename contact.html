@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
-    <script>
-        alert("give alart");
-    </script>
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <title>Home Page</title>
 
 </head>
@@ -16,83 +14,60 @@
     <div class="mainmenu">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
             <li><a href="calendar.html">Calendar</a></li>
+            <!-- <li><a href="about.html">About</a></li>
             <li><a href="page-structure.html">Pages</a></li>
             <li><a href="">Project</a></li>
             <li><a href="">Features</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="">Blog</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
+    <div class="section-padding">
+        <table>
+            <tr>
+                <td width = "3%"></td>
+                <td width = "63%">
+                    <div class="white-box">
+                            <h4>Send us a message</h4>
+                            <div class="contact-form">
+                                <form action="http://formspree.io/wpdev.sumon@gmail.com" method="POST">
+                                    <table>
+                                        <tr width = "63%">
+                                            <input name="firstname" type="text" placeholder="First Name" required>
+                                        
+                                            <input name="lastname" type="text" placeholder="Last Name" required>
+                                        
+                                            <input name="email" type="email" placeholder="Your Email" required>
+                                            <input name="subject" type="text" placeholder="Subject" required>
+                                        </tr>
+                                        <textarea name="message" id="1" cols="30" rows="10" placeholder="Write Your Message" required></textarea>
+                                    </table>
+                                    <input type="submit" value="Send Message"> 
 
-    <section class="contac-form">
-     <form action="">
-        <table class="reg-tbl">
-            <tr>
-                <th colspan="4">Registration</th>
-            </tr>
-            <tr class="input-text">
-                <td> <label for="Frist Name">Frist Name: </label> </td>
-                <td><input type="text"  placeholder="Enter Frist Name" ></td>
-                <td> <label for="Last Name">Last Name: </label> </td>
-                <td><input type="text" " placeholder="Enter Last Name" ></td>
-            </tr>
-            <tr>
-                <td> <label for="">Father Name: </label> </td>
-                <td><input type="text" placeholder="Enter Father Name" ></td>
-                <td> <label for="">Mother Name: </label> </td>
-                <td><input type="text"  placeholder="Enter Mother Name" ></td>
-            </tr>
-            <tr>
-                <td> <label for="">Gender</label> </td>
-                <td>
-                    <input type="radio" name="Gender" value="Male">
-                    <label for="Male">Male</label>
-                    <input type="radio" name="Gender" value="Female">
-                    <label for="Male">Female</label>
-                    <input type="radio" name="Gender" value="Other">
-                    <label for="Male">Other</label>
+                                </form>
+                            </div>
+                    </div>
                 </td>
-                <td> <label for="">Date of Birth: </label> </td>
-                <td><input type="date" placeholder="Date of Birth" ></td>
-            </tr>
-            <tr>
-                <td> <label for="">Religion: </label> </td>
-                <td>
-                    <select name="Religion" id="">
-                        <option value="">Select Religion</option>
-                        <option value="Islam">Islam</option>
-                        <option value="Islam">Islam</option>
-                    </select>
+                <td width = "2%"></td>
+                <td width = "30%">
+                    <div class="colored-box">
+                        <h4>Get In Touch</h4>
+                        <p class="contact-info"><i class="fa fa-home"></i>101/102, Road #5, Block #TA<br />Mirpur - 6, Dhaka - 1212</p>
+                        <p class="contact-info"><i class="fa fa-phone"></i><a href="tel:8801764741597">+880 1764-741597</a> <br /><a href="tel:01521413612">+880 1521-413612</a> </p>
+                        <p class="contact-info"><i class="fa fa-envelope"></i><a href="mailto:wpdev.sumon@gmail.com">wpdev.sumon@gmail.com</a> <br /><a href="mailto:wpdev.sumon@gmail.com">devops.sumon@gmail.com</a> </p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/wpdev.sumon/" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/dev-sumon-islam" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/dev-sumon" target="_blank"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
                 </td>
-                <td> <label for="">Blood Group: </label> </td>
-                <td>
-                    <select name="Religion" id="">
-                        <option value="">Select Blood Group</option>
-                        <option value="ab+">AB+</option>
-                        <option value="a+">A+</option>
-                        <option value="b+">B+</option>
-                        <option value="a-">A-</option>
-                    </select>
-                </td>
-            </tr>
-            <tr class="from-address">
-                <td> <label>Present address: </label> </td>
-                <td colspan="3"><input type="text"  placeholder="Enter Present address" ></td>
-            </tr>
-            <tr class="from-address">
-                <td> <label>Permanent address: </label> </td>
-                <td colspan="3"><input type="text" " placeholder="Enter Permanent address" ></td>
-            </tr>
-            <tr class="from-check">
-                <td></td>
-                <td colspan="2"><input type="checkbox" name="agree" value="agree"> <label>I agree with all trams and condition</label> </td>
-                <td><input type="submit"></td>
+                <td width = "2%"></td>
             </tr>
         </table>
-     </form>
-    </section>
+    </div>
 </body>
 </html>
