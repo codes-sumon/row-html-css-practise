@@ -1,8 +1,12 @@
-console.log("test");
+
 var a = 4;
 var b = 5;
-var c = a+b;
+var c = add(4,9);
 
-console.log("test", c);
+function add(a,b){
+    return a+b;
+}
 
+
+console.log("Result: ", c);
 

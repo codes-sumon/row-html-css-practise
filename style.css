@@ -173,7 +173,7 @@ input[type="radio"]{
 .from-address td input[type="text"]{
     width: 600px;
 }
-.from-check td input[type="submit"], .contact-form button[type="submit"] {
+.from-check td input[type="submit"], .contact-form button[type="submit"],button[type="submit"] {
     background: #52b0fb none repeat scroll 0 0;
     border: medium none;
     border-radius: 3px;

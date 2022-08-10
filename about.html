@@ -13,7 +13,7 @@
     <div class="mainmenu">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="calendar.html">Calendar</a></li>
             <li><a href="page-structure.html">Pages</a></li>
             <li><a href="">Project</a></li>
@@ -25,13 +25,34 @@
 
 
     <section>
-     <form action="">
-        <table>
-            <tr>
-                <td></td>
-            </tr>
-        </table>
-     </form>
+        <p id="age"></p>   
     </section>
+
+    <script>
+        var age = prompt('you age', '');
+        var text = '';
+        if(isNaN(age))
+        {
+            alert('enter valid number');
+        }
+        else
+        {
+            while (age >= 10)
+            {
+
+                text += "while " + age +"<br> ";
+                age--;
+
+            };
+            
+            // for(age; age >= 10; age--)
+            // {
+            //     text += "for " + age +"<br> ";
+            // }
+            document.getElementById("age").innerHTML = text;
+        }
+        
+
+    </script>
 </body>
 </html>
