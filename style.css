@@ -261,3 +261,16 @@ input[type="submit"] {
 table.c-tbl {
     margin-top: 20px;
 }
+
+.btn .left, .btn .right{
+    background-color:#52b0fb;
+    padding: 10px;
+    border-radius: 3px;
+    width: 120px;
+    display: block;
+    color: #000;
+}
+
+.btn a{
+    color: #000;
+}
