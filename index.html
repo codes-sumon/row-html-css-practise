@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="test.js"></script>  
+     
     <title>Home Page</title>
 
 </head>
@@ -48,64 +50,11 @@
         <button type="submit" onclick="displayalt()">Clear</button>
         <h1 id="add"></h1>
     </section>
+    <section>
+        <button onclick="callLoop()">Loop</button>
+        <h4 id="s-loop"></h4>
+        <h4 id="o-loop"></h4>
+    </section>
 
-    <script>
-        function valu_chk()
-        {
-            var num1 = document.getElementById("num1").value;
-            var num2 = document.getElementById("num2").value;
-
-            if( isNaN(num1) || isNaN(num2) || num1 == '' || num2 =='')
-            {
-                alert('Enter valid number!')
-                return;
-            }
-        }
-        function displayalt()
-        {
-            var conf = confirm("Do you want to clear")
-            if (conf == true) 
-            {
-                 document.getElementById("add").innerHTML = "";
-                 document.getElementById('num1').value = "";
-                 document.getElementById('num2').value = "";
-            }
-        }
-
-        function sum()
-        {
-            valu_chk();
-            var num1 = document.getElementById("num1").value;
-            var num2 = document.getElementById("num2").value;
-            var num3 = parseFloat(num1) + parseFloat(num2);
-            document.getElementById("add").innerHTML = num3;
-        }
-
-        function min()
-        {
-            var num1 = document.getElementById("num1").value;
-            var num2 = document.getElementById("num2").value;
-            var num3 = parseFloat(num1) - parseFloat(num2);
-            document.getElementById("add").innerHTML = num3;
-        }
-
-        function sub()
-        {
-            var num1 = document.getElementById("num1").value;
-            var num2 = document.getElementById("num2").value;
-            var num3 = parseFloat(num1) * parseFloat(num2);
-            document.getElementById("add").innerHTML = num3;
-        }
-
-        function div()
-        {
-            var num1 = document.getElementById("num1").value;
-            var num2 = document.getElementById("num2").value;
-            var num3 = parseFloat(num1) / parseFloat(num2);
-            document.getElementById("add").innerHTML = num3;
-        }
-
-
-    </script>
 </body>
 </html>

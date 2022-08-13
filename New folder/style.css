@@ -1,0 +1,74 @@
+/* Base CSS */
+a:focus { 
+    outline: 0 solid 
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #222;
+}
+h2 {
+    font-size: 32px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #565656;
+    font-size: 17px;    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a, a:hover { 
+    text-decoration: none;
+}
+
+/* Calender css */
+.section-padding{
+    margin: 50px 0px;
+    padding: 0px;
+}
+.calender {
+    width: 500px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 50px #222;
+}
+.calender h2{
+    padding: 20px 0px 5px 0px;
+    text-align: center;
+}
+.calender-image{
+    background-image: url("calender-bg.jpg");
+    height: 250px;
+    width: 500px;
+    align-content: center;
+    object-fit: cover;
+}
+
+.calender-full-body{
+    text-align: center;
+}
+.calender-full-body h3{
+    font-size: 25px;
+    padding-top: 10px;
+}
+.calender-header{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px,1fr));
+}
+.calender-body{
+    display: grid;
+    grid-template-columns: repeat(7, minmax(25px,1fr));
+    padding-bottom: 20px;
+}
+.calender-header :nth-child(7n), .calender-body :nth-child(7n){
+    color: red;
+}
+.single-day{
+    padding: 10px;
+}
