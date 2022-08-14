@@ -78,3 +78,31 @@ function callLoop(){
         document.getElementById("o-loop").innerHTML = oseries;
     }
 }
+
+function pizzaarea( diameter, slice)
+{
+    return areaOfPizza(diameter)/slice;
+
+    function areaOfPizza(diameter)
+    {
+        var redius = diameter/2;
+        return 3.1416*redius*redius;
+    }
+}
+
+function ps()
+{
+    var pDia = prompt('Enter thee size','');
+    var pPcs = prompt('Enter thee slice number','');
+    var vArea;
+
+    if(pDia && pPcs)
+    {
+        vArea = pizzaarea(pDia,pPcs);
+        alert('Area of each slice: '+vArea);
+    }
+    else
+    {
+        alert('Invalid input!');
+    }
+}

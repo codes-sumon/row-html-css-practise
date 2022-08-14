@@ -29,7 +29,7 @@ a, a:hover {
 
 /* Calender css */
 .section-padding{
-    margin: 50px 0px;
+    margin: 50px 0px 0px 0px;
     padding: 0px;
 }
 .calender {
@@ -37,17 +37,16 @@ a, a:hover {
     margin: auto;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 5px 50px #222;
+    border-radius: 7px 7px 7px 7px;
 }
-.calender h2{
-    padding: 20px 0px 5px 0px;
-    text-align: center;
-}
+
 .calender-image{
     background-image: url("calender-bg.jpg");
     height: 250px;
     width: 500px;
     align-content: center;
     object-fit: cover;
+    border-radius: 7px 7px 0px 0px;
 }
 
 .calender-full-body{
@@ -71,4 +70,53 @@ a, a:hover {
 }
 .single-day{
     padding: 10px;
+}
+
+
+.link-left a{
+    font-size: 30px;
+}
+.calender-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+.text h3,.text h2{
+    color: aliceblue;
+    padding-top: 10px;
+    margin: 0px;
+    padding-left: 40px;
+}
+.single-day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 31px;
+    text-align:center;
+}
+.single-day:hover{
+    /* border: 2px solid skyblue;  */
+    border-radius: 50%; 
+    font-weight: 700;
+    color: rgb(16, 16, 19);
+    background-color: rgb(166, 255, 255);
+}
+.logo img{
+    max-width: 50px;
+    max-height: 50px;
+}
+.main-menu{
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    align-items: right;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    color: white;
 }
