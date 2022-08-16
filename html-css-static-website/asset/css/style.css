@@ -41,7 +41,7 @@ a, a:hover {
 }
 
 .calender-image{
-    background-image: url("calender-bg.jpg");
+    background-image: url("/asset/img/calender-bg.jpg");
     height: 250px;
     width: 500px;
     align-content: center;
@@ -177,7 +177,7 @@ footer span a:hover{
 /* home section styling */
 .home{
     display: flex;
-    background: url("banner.jpg") no-repeat center;
+    background: url("/asset/img/banner.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -469,4 +469,64 @@ section{
 .right form .button-area button:hover{
   color: #02D002;
   background: none;
+}
+.cv{display: flex;
+    justify-content: center;
+    padding: 90px 0px;
+    color: #111 !important
+}
+.cv-white-box{
+    background-color:#fff;
+    width: 900px;
+    box-shadow: 0 0px 25px #222;
+}
+.cv-header {
+    padding: 50px 90px 0px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.cv-left{
+    line-height: 2.5ch;
+}
+
+.cv-left a{
+    color: #111;
+}
+.cv-header .cv-right img{
+    height: 200px;
+}
+.cv-sub-section
+{
+    padding: 20px 90px 0px 90px;
+}
+.cv-sub-section .cv-title{
+    width: 100%;
+    background-color: #aca9d647;
+    padding: 5px 5px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.cv-body p {
+    text-align: justify;
+    padding: 5px;
+    width: 100%;
+}
+.edu-info{
+    display: grid;
+    /* grid-template-columns: repeat(3, minmax(25px,1fr)); */
+    grid-template-columns: max-content max-content max-content;
+}
+.title-name{
+    font-weight: bold;
+    padding: 10px 0px 0px 20px;
+    font-size: 18px;
+}
+.info-title{
+    font-weight: 600;
+}
+.colon{
+    padding: 0px 20px;
+}
+.cv-title i, .cv-left i{
+    color: #001C40;
 }
